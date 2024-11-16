@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "initDb": "node src/utils/buildDb.js",
     "start": "node .",
     "dev": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +18,9 @@
     "express": "^4.18.2",
     "express-oauth2-jwt-bearer": "^1.5.0",
     "helmet": "^7.0.0",
-    "surrealdb.js": "^0.8.3",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
     "volleyball": "^1.5.1"

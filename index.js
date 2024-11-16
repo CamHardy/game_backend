@@ -6,10 +6,10 @@ import volleyball from 'volleyball';
 import cors from 'cors';
 import swaggerJsdoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
-import { config } from'dotenv';
-config();
+import 'dotenv/config';
 
-import { initDb } from './src/utils/surrealdb.js';
+//import { initDb } from './src/utils/surrealdb.js';
+import { initDb } from './src/utils/postgres.js';
 
 // middleware
 import { jwtCheckUser } from './src/middleware/jwtCheck.js';

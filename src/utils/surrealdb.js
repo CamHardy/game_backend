@@ -1,4 +1,4 @@
-import Surreal from "surrealdb.js";
+//import { Surreal } from "surrealdb.js";
 
 import { config } from 'dotenv';
 config();
@@ -19,28 +19,38 @@ export async function initDb() {
             throw new Error("Database username or password not set")
         }
 
-        // await db.connect(DB_URL)
-        //     .then(() => {
-        //         console.log("Successfully connected to database");
-        //     })
-        //     .catch((err) => {
-        //         console.log("Error connecting to database", err);
-        //     });
+//        try {
+//            await db.connect(DB_URL, {
+//                namespace: DB_NAME,
+//                database: DB_NAME,
+//                auth: {
+//                    namespace: DB_NAME,
+//                    database: DB_NAME,
+//                    username: DB_USER,
+//                    password: DB_PASS
+//                }
+//            });
+//        } catch (err) {
+//            console.log("Error connecting to database", err);
+//        }
+//        console.log("Successfully connected to database");
 
         // await db.wait();
 
         await db.signin({
-                user: DB_USER,
-                pass: DB_PASS
+                username: DB_USER,
+                password: DB_PASS,
+                namespace: DB_NAME,
+                database: DB_NAME
             })
             .then((res) => {
-                console.log("Successfully signed in to database", res?res:'');
+                console.log("Successfully signed in to database");
             })
             .catch((err) => {
                 console.log("Error signing in to database", err);
             });
 
-        await db.use({ ns: DB_NAME, db: DB_NAME });
+        await db.use({ namespace: DB_NAME, database: DB_NAME });
     } catch (err) {
         console.log("oh yuck", err);
     }
