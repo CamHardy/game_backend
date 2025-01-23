@@ -1,0 +1,109 @@
+{
+  "players": [
+    {
+      "username": "TJ Kream",
+      "model_id": 1,
+      "experience_points": 0,
+      "health_points": 0,
+      "damage_points": 0,
+      "energy_points": 0,
+      "currency": 0,
+      "inventory": {
+        "items": [
+          { "name": "Smol Sword", "quantity": 1 },
+          { "name": "Beeg Shield", "quantity": 1 }
+        ],
+        "equipped_items": [],
+        "action_items": []
+      },
+      "active_quest_id": 1,
+      "dungeon_tokens": [
+        { "id": 1 },
+        { "id": 2 }
+      ]
+    }, {
+      "username": "Glub Tubbus Wepple",
+      "model_id": 1,
+      "experience_points": 0,
+      "health_points": 0,
+      "damage_points": 0,
+      "energy_points": 0,
+      "currency": 0,
+      "inventory": {
+        "items": [],
+        "equipped_items": [
+          { "name": "Paper", "quantity": 1000 },
+          { "name": "Scissors", "quantity": 1 }
+        ],
+        "action_items": [
+          { "name": "Potion", "quantity": 1 }
+        ]
+      },
+      "active_quest_id": null,
+      "dungeon_tokens": []
+    }
+  ],
+  "quests": [
+    {
+      "name": "Sleepy Joe's Cabin",
+      "location": {
+        "type": "Point",
+        "coordinates": [ -77.03463355, 38.89644365 ]
+      }
+    }, {
+      "name": "Big Libby",
+      "location": {
+        "type": "Point",
+        "coordinates": [ -74.044502, 40.689247 ]
+      }
+    }, {
+      "name": "Midwest Stargate",
+      "location": {
+        "type": "Point",
+        "coordinates": [ -90.184776, 38.624691 ]
+      }
+    }, {
+      "name": "Alien Psyop",
+      "location": {
+        "type": "Point",
+        "coordinates": [ 115.793, 37.2431 ]
+      }
+    }, {
+      "name": "BBQ Land",
+      "location": {
+        "type": "Point",
+        "coordinates": [ -114.05278, 51.083488 ]
+      }
+    }, {
+      "name": "THouse",
+      "location": {
+        "type": "Point",
+        "coordinates": [ -114.0497077, 51.083438 ]
+      }
+    }, {
+      "name": "Dunamis",
+      "location": {
+        "type": "Point",
+        "coordinates": [ -114.05145653, 51.08479351 ]
+      }
+    }
+  ],
+  "dungeons": [
+    {
+      "name": "The Chamber of Secrets",
+      "is_temporary": false,
+      "expiry_time": null,
+      "seed": 0
+    }, {
+      "name": "Anor Londo",
+      "is_temporary": true,
+      "expiry_time": "2011-09-22T00:00:01",
+      "seed": 1337
+    }, {
+      "name": "Ye Old Dungeon",
+      "is_temporary": false,
+      "expiry_time": null,
+      "seed": 420
+    }
+  ]
+}

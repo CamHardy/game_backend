@@ -2,6 +2,10 @@
 
 This project uses an Express server as an API for the PostGresQL database.
 
+## TODO: 
+- [ ] turso dropped support for sequelize, either migrate to a new ORM or find a new DBaaS
+- [ ] change POST update requests to their correct PUT & PATCH equivalents
+
 ## Running Locally
 
 Make sure to have your database running, then copy .env.example to .env and update the values appropriately.
